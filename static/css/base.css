@@ -1,0 +1,426 @@
+/* background color for body of html doc */
+body{
+    background-color: #E5E8D6;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* sets css styling for insights header */
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #38503F;
+    font-size: 5rem;
+    line-height: 101px;
+    text-align: center;
+}
+
+/* FEATURED ROW */
+.featuredRow{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.featuredRow h3 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #38503F;
+    width: 1150px; 
+}
+
+.featuredRow .col-md-6 {
+    height: 420px;
+    width: 575px; /* height and width parameters taken of figma */
+}
+
+.techCol{
+    background-color: #38503F;
+}
+
+.techCol p {
+    color: #E5E8D6;
+    width: 80%;
+    margin: auto;
+}
+
+.techCol p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+
+.techCol p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.techCol p:nth-child(3) {
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+.techCol a {
+    text-decoration: underline;
+    color: #E5E8D6;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 80%;
+    margin: 12% auto auto;
+    display: block;
+}
+
+.techCol a:hover{
+    text-decoration: underline;
+}
+
+
+/* CATEGORY MENU */
+
+hr {
+    margin: 40px auto 10px;
+    width: 1150px;
+    border: 2px solid #B7CEBE;
+}
+
+.nav-item {
+    margin-left: 7rem;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.nav-item:first-child{
+    margin-left: 0px;
+}
+
+.nav-item a {
+    color: #38503F;
+}
+
+.nav-item a:hover {
+    color: #38503F;
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+
+/* -- INSIGHTS ROW --*/
+
+.insightsRow{
+    margin-top: 50px;
+    margin: auto;
+    width: 83%;
+}
+
+.card{
+    background-color: #38503F;
+    margin: 10px auto 20px;
+    border-radius: 0;
+    border: none;
+    width: 95%;
+    min-height: 600px;
+   
+} 
+
+.card-category{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #D5D7CC;
+    padding: 20px 30px 5px;
+}
+
+.card-title{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: #D5D7CC;
+    padding: 20px 30px 5px;
+}
+
+.card-text{
+    font-size: 1rem;
+    color: #D5D7CC;
+    padding: 20px 30px 5px;
+}
+
+
+/*-- media queries for smaller screens --*/
+@media only screen and (max-width: 767px) {
+    /* background color for body of html doc */
+body{
+    background-color: #E5E8D6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* sets css styling for insights header */
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #38503F;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* FEATURED ROW */
+.featuredRow h3 {
+    font-size: 0.9rem;
+    color: #38503F;
+    width: 80%;  
+}
+
+.featuredRow .col-md-6 {
+    width: 80%; 
+    height: 300px;
+}
+
+.col-md-6 img {
+    height: 300px;
+    width: 100%;
+}
+
+.techCol{
+    background-color: #38503F;
+    height: 300px;
+}
+
+.techCol p {
+    color: #E5E8D6;
+    width: 80%;
+    margin: auto;
+}
+
+.techCol p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-top: 5%;
+}
+
+.techCol p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.techCol p:nth-child(3) {
+    font-size: 0.7rem;
+    margin-top: 5%;
+}
+
+.techCol a {
+    text-decoration: underline;
+    color: #E5E8D6;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    width: 80%;
+    margin: 12% auto auto;
+    display: block;
+}
+
+.techCol a:hover{
+    text-decoration: underline;
+}
+
+
+/* CATEGORY MENU */
+
+hr {
+    margin: 40px auto 10px;
+    width: 100vw;
+    border: 2px solid #B7CEBE;
+}
+.navbar-nav {
+    margin: auto;
+    display: flex !important;
+    flex-direction: row;
+}
+
+.nav-item {
+    font-size: 0.6rem;
+    margin: 10px 15px;
+}
+
+.nav-item a {
+    color: #38503F;
+}
+
+.nav-item a:hover {
+    color: #38503F;
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+
+/* -- INSIGHTS ROW --*/
+
+.insightsRow{
+    margin-top: 50px;
+    margin: auto;
+    width: 80%;
+}
+
+.card{
+    background-color: #38503F;
+    margin: 10px auto 20px;
+    border-radius: 0;
+    border: none;
+    width: 90%;
+    min-height: 350px;
+   
+} 
+
+.card-category{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #D5D7CC;
+    padding: 5px 15px;
+}
+
+.card-title{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: #D5D7CC;
+    padding: 5px 15px;
+}
+
+.card-text{
+    font-size: 0.7rem;
+    color: #D5D7CC;
+    padding: 5px 15px;
+}
+}
+/*-- media queries for ipad --*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    body{
+        background-color: #E5E8D6;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    /* sets css styling for insights header */
+    h1{
+        font-family: 'Open Sans', sans-serif;
+        color: #38503F;
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    /* FEATURED ROW */
+    .featuredRow h3 {
+        font-size: 0.9rem;
+        color: #38503F;
+        width: 80%;  
+    }
+    
+    .featuredRow .col-md-6 {
+        width: 80%; 
+        height: 300px;
+    }
+    
+    .col-md-6 img {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .techCol{
+        background-color: #38503F;
+        height: 300px;
+    }
+    
+    .techCol p {
+        color: #E5E8D6;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .techCol p:nth-child(1) {
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    
+    .techCol p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    
+    .techCol p:nth-child(3) {
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    
+    .techCol a {
+        text-decoration: underline;
+        color: #E5E8D6;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        width: 80%;
+        margin: 5% auto auto;
+        display: block;
+    }
+    
+    .techCol a:hover{
+        text-decoration: underline;
+    }
+    
+    
+    /* CATEGORY MENU */
+    
+    hr {
+        margin: 40px auto 10px;
+        width: 100vw;
+        border: 2px solid #B7CEBE;
+    }
+    .navbar-nav {
+        margin: auto;
+        display: flex !important;
+        flex-direction: row;
+    }
+    
+    .nav-item {
+        font-size: 1rem;
+        margin: 10px 15px;
+    }
+    
+    .nav-item a {
+        color: #38503F;
+    }
+    
+    .nav-item a:hover {
+        color: #38503F;
+        text-decoration: underline;
+        font-weight: 1000;
+    }
+    
+    
+    /* -- INSIGHTS ROW --*/
+    
+    .insightsRow{
+        margin-top: 50px;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .card{
+        background-color: #38503F;
+        margin: 10px auto 20px;
+        border-radius: 0;
+        border: none;
+        width: 90%;
+        min-height: 400px;
+       
+    } 
+    
+    .card-category{
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #D5D7CC;
+        padding: 10px 15px 5px;
+    }
+    
+    .card-title{
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: #D5D7CC;
+        padding: 10px 15px 5px;
+    }
+    
+    .card-text{
+        font-size: 0.7rem;
+        color: #D5D7CC;
+        padding: 10px 15px 5px;
+    }
+}
