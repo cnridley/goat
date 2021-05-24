@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}
+Dev Test 1
+{% endblock %}
+
+
 {% block content %}
 
 <h1>Insights</h1>
@@ -13,9 +18,9 @@
         <img src="{{F.featureImage.url}}">
         </div>
         <div class="col-md-6 techCol">
-            <p>{{F.featureCategory}}</p>
-            <p>{{F.featureTitle}}</p>
-            <p>{{F.featureDesc}}
+            <p>{{ F.featureCategory }}</p>
+            <p>{{ F.featureTitle }}</p>
+            <p>{{ F.featureDesc }}
             </p>
             <a href="#">Discover More &#8599;</a>
         </div>
@@ -28,24 +33,11 @@
     <nav class="navbar navbar-expand-sm w-90 m-auto">
         <div class="container-fluid">
             <ul class="navbar-nav mx-auto">
+                {% for C in category %}
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">All Topics</a>
+                <a class="nav-link active" aria-current="page" href="#">{{C.categoryName}}</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Process</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Stategy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Technology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tools</a>
-              </li>
+              {% endfor %}
             </ul>
         </div>
       </nav>

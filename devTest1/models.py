@@ -21,3 +21,11 @@ class Insights(models.Model):
 
     def __str__(self):
         return self.insightsCategory
+
+
+class CategoryMenu(models.Model):
+    categoryName = models.CharField(max_length=254, null=True, blank=True)
+    
+    def __str__(self):
+        return self.categoryName
+        
