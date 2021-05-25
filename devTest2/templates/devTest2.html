@@ -19,21 +19,24 @@ Dev Test 2
 </div>
 
 <!-- breadcrumbs -->
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='whitesmoke'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-<ol class="breadcrumb">
-    {% for B in breadcrumb %}
-  <li class="breadcrumb-item">{{ B.breadcrumbName }}</li>
-    {% endfor %}
-</ol>
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='whitesmoke'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% for B in breadcrumb %}
+        <li class="breadcrumb-item">{{ B.breadcrumbName }}</li>
+        {% endfor %}
+    </ol>
 </nav>
 <!--Healine-->
 <img src="/media/Headline.png" class="quotes">
 
 <div class="headline">
-<p>international student</p>
-<p>If you’re looking for a college that is committed to your success - this place is for you</p>
-<p>student name</p>
-<p>Graduate of Agriculture & Bioresourcesat the best College</p>
+    {% for H in head %}
+    <p>{{ H.headlineHeader}}</p>
+    <p>{{ H.headlineQuote}}</p>
+    <p>{{ H.headlineName}}</p>
+    <p>{{ H.headlineEducation}}</p>
+    {% endfor %}
 </div>
 
 <!-- line at bottom of image -->
@@ -41,14 +44,14 @@ Dev Test 2
 
 <!--Frame 1, 2, 3 & 4 -->
 <div class="row container-fluid frameRow">
-{% for F in frame %}
-<div class="col-md-3">
-    <p>{{ F.frameHeader }}</p>
-    <p>{{ F.frameInfo }}</p>
-</div>
-{% endfor %}
+    {% for F in frame %}
+    <div class="col-md-3">
+        <p>{{ F.frameHeader }}</p>
+        <p>{{ F.frameInfo }}</p>
+    </div>
+    {% endfor %}
 </div>
 
-     
+
 
 {% endblock %}

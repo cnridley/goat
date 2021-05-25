@@ -25,3 +25,13 @@ class frames(models.Model):
     def __str__(self):
         return self.frameHeader
 
+
+class headline(models.Model):
+    headlineHeader = models.CharField(max_length=254, null=True, blank=True)
+    headlineQuote = models.CharField(max_length=254, null=True, blank=True)
+    headlineName = models.CharField(max_length=254, null=True, blank=True)
+    headlineEducation = models.CharField(max_length=254, null=True, blank=True)
+    
+    def __str__(self):
+        return self.headlineHeader
+
