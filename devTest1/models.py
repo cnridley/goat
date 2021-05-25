@@ -18,6 +18,7 @@ class Insights(models.Model):
     insightsTitle = models.CharField(max_length=254, null=True, blank=True)
     insightsDesc = models.TextField(max_length=254, null=True, blank=True)
     insightsImage = models.ImageField(null=True, blank=True)
+    has_video = models.BooleanField(default=False, blank=True, null=True)
 
     def __str__(self):
         return self.insightsCategory

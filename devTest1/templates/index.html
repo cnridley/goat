@@ -52,6 +52,9 @@ Dev Test 1
           <div class="col-md-4 g-0">
             <div class="card">
                 <img src="{{I.insightsImage.url}}" class="card-img-top" alt="...">
+                {% if I.has_video == True %}
+                <span>Video</span>
+                {% endif %}
                 <div class="card-body">
                   <h5 class="card-category">{{I.insightsCategory}}</h5>
                   <p class="card-title">{{I.insightsTitle}}</p>

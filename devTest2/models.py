@@ -9,3 +9,19 @@ class backgroundImage(models.Model):
 
     def __str__(self):
         return self.imageName
+
+
+class breadcrumbs(models.Model):
+    breadcrumbName = models.CharField(max_length=254, null=True, blank=True)
+    
+    def __str__(self):
+        return self.breadcrumbName
+
+
+class frames(models.Model):
+    frameHeader = models.CharField(max_length=254, null=True, blank=True)
+    frameInfo = models.CharField(max_length=254, null=True, blank=True)
+    
+    def __str__(self):
+        return self.frameHeader
+
